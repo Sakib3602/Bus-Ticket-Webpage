@@ -1,160 +1,296 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero Traveler</title>
     <!-- css file link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- daisy ui and tailwind link -->
-    
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- daisy ui and tailwind link End -->
 
     <!-- style -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;1,800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;1,800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-.op {
-    border-bottom: 2px solid #1DD100; 
-}
+      .op {
+        border-bottom: 2px solid #1dd100;
+      }
     </style>
 
     <!-- style End -->
-
-</head>
-<body>
-    <header class="w-full m-[10px]  lg:w-[1170px] lg:m-auto">
-        <!-- navbar -->
-        <div class="navbar bg-base-100 font-Raleway">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                
-              </div>
-              <a class="text-[20px]  lg:text-[36px] font-[800] font-Raleway">Hero-Traveler</a>
-            </div>
-            <div class="navbar-center hidden lg:flex font-[500]  lg:text-[18px] text-[#030712b3]">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                
-                <li><a>About</a></li>
-                <li><a>Destination</a></li>
-                
-                <li><a>Search</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-              <a class="btn bg-[#1dd1001a]">BUS <img src="./images/bus-icon.png" alt=""></a>
+  </head>
+  <body>
+    <header class="w-full m-[10px] lg:w-[1170px] lg:m-auto">
+      <!-- navbar -->
+      <div class="navbar bg-base-100 font-Raleway">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
           </div>
-        <!-- navbar end -->
+          <a class="text-[20px] lg:text-[36px] font-[800] font-Raleway"
+            >Hero-Traveler</a
+          >
+        </div>
+        <div
+          class="navbar-center hidden lg:flex font-[500] lg:text-[18px] text-[#030712b3]"
+        >
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
 
-        <!-- hero start -->
-        <div class="hero h-[550px] mt-10 relative" style="background-image: url(./images/banner.png); ">
-            
-            <div class="hero-content text-center text-neutral-content">
-              <div class="w-[70%]">
-                <h1 class="mb-5 text-5xl font-bold">End-TO-End Travel With</h1>
-                <h1 class="mb-5 text-5xl font-bold text-[#1DD100]">Hero Paribahan</h1>
-                
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
 
-                <p>Embark on a voyage with us. Connecting communities, fostering memories. Experience convenience and comfort. Your journey begins here.</p>
-                <button class="btn btn-primary mt-6">Buy Tickets</button>
-              </div>
-            </div>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-[#1dd1001a]"
+            >BUS <img src="./images/bus-icon.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <!-- navbar end -->
 
-            <div class="hidden lg:block lg:flex  absolute  w-[308px] h-[100px] left-[60px] top-[500px] op p-[5px] bg-white rounded-lg">
-                <div><img src="./images/people.png" alt=""></div>
-                <div class="ml-[20px]">
-                    <h2 class="text-[36px] font-[700]">500k+</h2>
-                    <p>Registered User</p>
-                </div>
-            </div>
-            <div class=" hidden lg:block lg:flex absolute  w-[308px] h-[100px] left-[440px] top-[500px] op p-[5px] bg-white rounded-lg">
-                <div><img src="./images/ticket-cupon.png" alt=""></div>
-                <div class="ml-[20px]">
-                    <h2 class="text-[36px] font-[700]">20 Lakh+</h2>
-                    <p>Tickets Sold</p>
-                </div>
-            </div>
-            <div class="hidden lg:block lg:flex  absolute  w-[308px] h-[100px] left-[800px] top-[500px] op p-[5px] bg-white rounded-lg">
-                <div><img src="./images/stoppage.png" alt=""></div>
-                <div class="ml-[20px]">
-                    <h2 class="text-[36px] font-[700]">700k+</h2>
-                    <p>Retail Partner</p>
-                </div>
-            </div>
+      <!-- hero start -->
+      <div
+        class="hero h-[550px] mt-10 relative"
+        style="background-image: url(./images/banner.png)"
+      >
+        <div class="hero-content text-center text-neutral-content">
+          <div class="w-[70%]">
+            <h1 class="mb-5 text-5xl font-bold">End-TO-End Travel With</h1>
+            <h1 class="mb-5 text-5xl font-bold text-[#1DD100]">
+              Hero Paribahan
+            </h1>
 
+            <p>
+              Embark on a voyage with us. Connecting communities, fostering
+              memories. Experience convenience and comfort. Your journey begins
+              here.
+            </p>
+            <button class="btn btn-primary mt-6">Buy Tickets</button>
           </div>
+        </div>
 
-        <!-- hero end -->
+        <div
+          class="hidden lg:flex absolute w-[308px] h-[100px] left-[60px] top-[500px] op p-[5px] bg-white rounded-lg"
+        >
+          <div><img src="./images/people.png" alt="" /></div>
+          <div class="ml-[20px]">
+            <h2 class="text-[36px] font-[700]">500k+</h2>
+            <p>Registered User</p>
+          </div>
+        </div>
+        <div
+          class="hidden  lg:flex absolute w-[308px] h-[100px] left-[440px] top-[500px] op p-[5px] bg-white rounded-lg"
+        >
+          <div><img src="./images/ticket-cupon.png" alt="" /></div>
+          <div class="ml-[20px]">
+            <h2 class="text-[36px] font-[700]">20 Lakh+</h2>
+            <p>Tickets Sold</p>
+          </div>
+        </div>
+        <div
+          class="hidden lg:block lg:flex absolute w-[308px] h-[100px] left-[800px] top-[500px] op p-[5px] bg-white rounded-lg"
+        >
+          <div><img src="./images/stoppage.png" alt="" /></div>
+          <div class="ml-[20px]">
+            <h2 class="text-[36px] font-[700]">700k+</h2>
+            <p>Retail Partner</p>
+          </div>
+        </div>
+      </div>
 
-
+      <!-- hero end -->
     </header>
 
     <!-- main start -->
-    
-   <main class="w-full m-[10px]  lg:w-[1170px] lg:m-auto">
-     <!-- Best offer start -->
-     <h1 class="text-center text-[40px] font-[700] lg:mt-[100px] text-[#030712]">Best Offer For You</h1>
-     <div class="flex flex-col lg:flex-row justify-between mt-12">
- 
-         <div class="w-full lg:w-[573px] h-[220px] bg-[#FFBF0F] rounded-lg flex">
-            <div class="w-[200px] text-center mt-[10%]">
-                <h2 class="text-[38px] font-[800] text-[#030712CC]">15% OFF</h2>
-            <h5 class="text-[16px] font-[500] text-[#03071280]">on your next purchase</h5>
-            <h6>use by January 2024</h6>
-            </div>
-            <img class="ml-[100px] hidden lg:block" src="./images/cupon-devider.png" alt="">
-            <div class="mt-[10%]">
 
-                <h3  class="text-[38px] font-[800] text-[#030712CC]">NEW15</h3>
-                <p class="text-[16px] font-[500] text-[#03071280]">coupon code</p>
-                
-                
-            
-            </div>
-         </div>
-         <div class="w-full lg:w-[573px] h-[220px] bg-[#F78C9C] rounded-lg flex mt-[40px] lg:mt-0">
-            <div class="w-[200px] text-center mt-[10%]">
-                <h2 class="text-[38px] font-[800] text-[#030712CC]">20% OFF</h2>
-            <h5 class="text-[16px] font-[500] text-[#03071280]">on your next purchase</h5>
+    <main class="w-full m-[10px] lg:w-[1170px] lg:m-auto">
+      <!-- Best offer start -->
+      <h1
+        class="text-center text-[40px] font-[700] lg:mt-[100px] text-[#030712]"
+      >
+        Best Offer For You
+      </h1>
+      <div class="flex flex-col lg:flex-row justify-between mt-12">
+        <div class="w-full lg:w-[573px] h-[220px] bg-[#FFBF0F] rounded-lg flex">
+          <div class="w-[200px] text-center mt-[10%]">
+            <h2 class="text-[38px] font-[800] text-[#030712CC]">15% OFF</h2>
+            <h5 class="text-[16px] font-[500] text-[#03071280]">
+              on your next purchase
+            </h5>
             <h6>use by January 2024</h6>
-            </div>
-            <img class="ml-[100px] hidden lg:block" src="./images/cupon-devider.png" alt="">
-            <div class="mt-[10%]">
+          </div>
+          <img
+            class="ml-[100px] hidden lg:block"
+            src="./images/cupon-devider.png"
+            alt=""
+          />
+          <div class="mt-[10%]">
+            <h3 class="text-[38px] font-[800] text-[#030712CC]">NEW15</h3>
+            <p class="text-[16px] font-[500] text-[#03071280]">coupon code</p>
+          </div>
+        </div>
+        <div
+          class="w-full lg:w-[573px] h-[220px] bg-[#F78C9C] rounded-lg flex mt-[40px] lg:mt-0"
+        >
+          <div class="w-[200px] text-center mt-[10%]">
+            <h2 class="text-[38px] font-[800] text-[#030712CC]">20% OFF</h2>
+            <h5 class="text-[16px] font-[500] text-[#03071280]">
+              on your next purchase
+            </h5>
+            <h6>use by January 2024</h6>
+          </div>
+          <img
+            class="ml-[100px] hidden lg:block"
+            src="./images/cupon-devider.png"
+            alt=""
+          />
+          <div class="mt-[10%]">
+            <h3 class="text-[38px] font-[800] text-[#030712CC]">Couple 20</h3>
+            <p class="text-[16px] font-[500] text-[#03071280]">coupon code</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button
+          class="w-[188px] h-[65px] border-solid border-[3px] border-[#67f851] text-[#67f851] mt-[50px] rounded-2xl text-[22px] font-[600]"
+        >
+          See All Offer
+        </button>
+      </div>
+      <!-- best offer end -->
+    </main>
 
-                <h3  class="text-[38px] font-[800] text-[#030712CC]">Couple 20</h3>
-                <p class="text-[16px] font-[500] text-[#03071280]">coupon code</p>
-                
-                
-            
+    <!-- ticket section start and another main here -->
+
+    <div
+      class="bg-[#F7F8F8] border-t-[4px] border-solid border-[#67f851] rounded-[80px] lg:mt-[80px] h-[100vh] w-full"
+    >
+      <div class="w-full m-[10px] lg:w-[1170px] lg:m-auto text-center">
+        <div class="w-full lg:w-[750px] m-auto mt-[60px] space-y-4">
+          <h1 class="text-[40px] font-[700]">Hero Traveler</h1>
+          <p class="text-[#03071299] text-[18px] font-[400] ">
+            Where every trip is a chapter in your adventure story, each
+            destination a new beginning, and every moment an unforgettable
+            experience waiting to unfold.
+          </p>
+        </div>
+      </div>
+      <!-- another -->
+      <div class="h-[418px] flex flex-col lg:flex-row w-full m-[10px] lg:w-[1170px] lg:m-auto  mt-[50px] rounded-3xl p-8 bg-white">
+
+        <div class="w-full lg:w-[800px] h-[320px] ">
+            <div class="h-[72px] w-full flex justify-between">
+                <div class="flex">
+                    <img class="" src="./images/bus-logo.png" alt="">
+                    <div class="ml-5 mt-2">
+                        <h1 class="text-[18px] font-[700] hidden lg:block">Green Line Paribahan</h1>
+                        <h6 class="hidden lg:block">Coach-009-WEB ! AC_Business</h6>
+                    </div>
+
+                </div>
+                <a class="btn bg-[#1dd1001a] text-[#67f851]" 
+            ><img src="./images/seat-green.png" alt=""><span>40</span>Seat Left</a>
             </div>
-         </div>
+
+            <div class="bg-[#F7F8F8] w-full h-[258px] rounded-xl mt-6 p-6">
+                <div class="flex justify-between border-b-2 border-dotted border-gray-300 p-[10px]">
+                    <h4>Route</h4>
+
+                    <h4>Dhaka-Sylhet</h4>
+
+                </div>
+                <div class="flex mt-6 justify-between border-b-2 border-dotted border-gray-300 p-[10px]">
+                    <h4>Departure Time</h4>
+
+                    <h4>9.00 AM</h4>
+
+                </div>
+
+                <div class="flex justify-between">
+                    <div class="bg-[#0307120D] p-2 lg:p-[20px] mt-[10px] lg:mt-[35px] rounded-lg text-[#030712CC]">Boarding point - Laximipur</div>
+                    <div class="bg-[#0307120D] p-2 lg:p-[20px] mt-[10px] lg:mt-[35px] rounded-lg text-[#030712CC]">Dropping Point - Bogura</div>
+                    <div class="bg-[#0307120D] p-2 lg:p-[20px] mt-[10px] lg:mt-[35px] rounded-lg text-[#030712CC]">Est. Time - 11 Hour</div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <img class="h-full ml-[20px]  hidden lg:block" src="./images/info-devider.png" alt="">
+
+
+       
+
+        <!--  -->
+
+        <div class="text-center flex flex-col justify-center mt-[60px] lg:mt-0 items-center ml-14 space-y-2">
+            <img src="./images/fare.png" alt="">
+            <h1 class="font-[700] text-[28px]">550 TAKA</h1>
+            <p>Per Seat</p>
+        </div>
         
-         
-
-
- 
-     </div>
-     <!-- best offer end -->
-   </main>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--  -->
+      </div>
+      <!-- another end -->
+    </div>
 
     <!-- script js link -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
