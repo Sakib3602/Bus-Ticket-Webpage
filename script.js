@@ -37,7 +37,7 @@ function x() {
         let app = document.getElementById("pll");
 
         let divv = document.createElement("div")
-        app.appendChild(divv)
+        
 
         let makeApp = document.createElement("p");
         makeApp.innerText = opp 
@@ -48,10 +48,11 @@ function x() {
         divv.appendChild(makeApp2)
       // working 
       let makeApp3 = document.createElement("p")
-      makeApp2.innerText = "550"
+      makeApp3.innerText = "550"
       divv.appendChild(makeApp3)
       
-      
+      app.appendChild(divv)
+
       
       divv.style.width = "100%"
       divv.style.display = "flex"
