@@ -40,7 +40,7 @@ function x() {
         app.appendChild(divv)
 
         let makeApp = document.createElement("p");
-        makeApp.innerText = opp;
+        makeApp.innerText = opp 
         divv.appendChild(makeApp);
 // not working
         let makeApp2 = document.createElement("h3")
