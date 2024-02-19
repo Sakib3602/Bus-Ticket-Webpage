@@ -35,6 +35,7 @@
     <!-- style End -->
   </head>
   <body>
+   <div id="hi"  >
     <header class="w-full m-[10px] lg:w-[1170px] lg:m-auto">
       <!-- navbar -->
       <div class="navbar bg-base-100 font-Raleway">
@@ -405,22 +406,23 @@
           <div class="space-y-4 mt-7">
             <h1>Name</h1>
             <label class="input input-bordered flex items-center gap-2">
-              <input type="text" class="grow" placeholder="Give Your Name" />
+              <input id="first" type="text" class="grow" placeholder="Give Your Name" />
             </label>
             <h1>Email</h1>
             <label class="input input-bordered flex items-center gap-2">
-              <input type="text" class="grow" placeholder="ioio@site.com" />
+              <input id="second" type="text" class="grow" placeholder="ioio@site.com" />
             </label>
             <h1>Number</h1>
             <label class="input input-bordered flex items-center gap-2">
               <input
+              id="third"
                 type="number"
                 class="grow"
                 placeholder="Give Your Number"
               />
             </label>
           </div>
-          <button class="btn w-full bg-[#1DD100] mt-4 text-white">Wide</button>
+          <button id="don" class="btn w-full bg-[#1DD100] mt-4 text-white">NEXT</button>
 
           <div class="flex justify-around mt-4">
             <a>Terms and conditions</a>
@@ -432,6 +434,50 @@
       <!-- seat section end -->
     </div>
 
+    <footer class="footer p-10 bg-black text-white text-base-content">
+      <aside>
+        <img src="./images/bus-icon.png" alt="">
+        <p >Hero Travelar LDT.<br>Providing reliable Services</p>
+      </aside> 
+      <nav>
+        <h6 class="footer-title">Services</h6> 
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Company</h6> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Legal</h6> 
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+
+
+   </div>
+
+
+
+   <!-- ses vai -->
+   <div id="finis" class="hero h-[400px] w-[800px] m-auto rounded-2xl hidden mt-[180px]">
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <img class="m-auto" src="./images/success.png" alt="">
+        <h1 class="text-5xl  text-[#1DD100] font-bold">Success</h1>
+        <p class="py-6">Thank you so much Booking Our Bus Seat</p>
+        <p class="py-6">We are Working hard to give you Best services. Give us Your Opinion.</p>
+        <button class="btn bg-[#1DD100] border-none">continue</button>
+      </div>
+    </div>
+  </div>
     <!-- script js link -->
     <script src="script.js"></script>
   </body>

@@ -110,11 +110,27 @@ function x() {
         alert("Sorry! You Can Book Four Seat Only");
       }
     });
+
   }
   //
-  // let inputp = document.getElementById("in");
+ let firstIn = document.getElementById("first")
+ let secIn = document.getElementById("second")
+ let thIn = document.getElementById("third")
 
- 
+ let don = document.getElementById("don")
+
+
+  don.addEventListener("click",()=>{
+    let finis = document.getElementById("finis")
+    finis.classList.remove("hidden")
+    let kl = document.getElementById("hi")
+    kl.classList.add("hidden")
+    body.style.backgroundColor = "#1DD100"
+  
+  
+  
+   
+  })
 }
 x();
 
